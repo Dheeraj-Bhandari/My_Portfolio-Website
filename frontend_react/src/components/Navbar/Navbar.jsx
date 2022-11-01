@@ -50,10 +50,12 @@ const Navbar = () => {
                 ))}
               </ul>
               <ul className='navbarSocial'>
-                <li><a href="https://github.com/Dheeraj-Bhandari" target={'_blank'} rel="noreferrer"> <BsGithub /></a></li>
-                <li><a href="https://www.youtube.com/channel/UChXHt9pHik0rR0iZDOHNdsg" target={'_blank'} rel="noreferrer"><BsYoutube /></a></li>
-                <li><a href="https://www.linkedin.com/in/digitaldk/" target={'_blank'} rel="noreferrer"><BsLinkedin /></a></li>
-                <li><a href="https://digitaldk-in.medium.com/" target={'_blank'} rel="noreferrer"><BsMedium /></a></li>
+                <li><a href="https://github.com/Dheeraj-Bhandari" target={'_blank'} rel="noreferrer"> <BsGithub /></a>
+                <a href="https://www.youtube.com/channel/UChXHt9pHik0rR0iZDOHNdsg" target={'_blank'} rel="noreferrer"><BsYoutube /></a>
+                <a href="https://www.linkedin.com/in/digitaldk/" target={'_blank'} rel="noreferrer"><BsLinkedin /></a>
+                <a href="https://digitaldk-in.medium.com/" target={'_blank'} rel="noreferrer"><BsMedium /></a>
+                </li>
+               
               </ul>
             </motion.div>
           )}
@@ -65,7 +67,8 @@ const Navbar = () => {
           target={'_blank'}
           rel="noreferrer"
         >
-          <img src="https://cdn-icons-png.flaticon.com/512/6614/6614677.png" alt="resume icon" />
+          {toggle==true? <img style={{marginLeft:'-6rem', marginTop:'-3rem'}}  src="https://cdn-icons-png.flaticon.com/512/6614/6614677.png" alt="resume icon" /> : <img  src="https://cdn-icons-png.flaticon.com/512/6614/6614677.png" alt="resume icon" />}
+          {/* <img  src="https://cdn-icons-png.flaticon.com/512/6614/6614677.png" alt="resume icon" /> */}
         </a>
       </div>
 
