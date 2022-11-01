@@ -9,6 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
+    <>
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
@@ -53,6 +54,18 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+        <div className="mycopyright">
+        <p className="p-text"></p>
+        <a href="https://docs.google.com/document/d/1UfCPCepAa2XXJ2z7HxYfP9zzkRrFdmS4/edit?usp=sharing&ouid=109558565411947281000&rtpof=true&sd=true"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/6614/6614677.png" alt="resume icon" />
+        </a>
+      </div>
+
+    </>
+ 
   );
 };
 
