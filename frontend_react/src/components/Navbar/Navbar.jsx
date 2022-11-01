@@ -3,6 +3,9 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import './Navbar.scss'
 import { images } from '../../constants'
+
+
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
