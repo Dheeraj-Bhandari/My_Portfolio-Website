@@ -21,14 +21,22 @@
     align-items: center;
   
     img {
-      width: 90px;
-      height: 20px;
+      width: 141px;
+      height: 37px;
   
       @media screen and (min-width: 2000px) {
         width: 180px;
         height: 40px;
       }
+      @media screen and (max-width: 600px) {
+        width: 180px;
+        height: 40px;
+      }
     }
+    @media screen and (max-width: 600px) {
+      height: 58px;
+    }
+
   }
   
   .app__navbar-links {
@@ -164,6 +172,7 @@
   
       @media screen and (min-width: 900px) {
         display: none;
+       
       }
     }
   
