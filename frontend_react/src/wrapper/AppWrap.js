@@ -1,7 +1,7 @@
 import React from 'react'
-import {NavigationDots, SocialMedia } from '../components'
+import {NavigationDots } from '../components'
 import SocailMedia from '../components/SocialMedia'
-
+import './AppWrap.scss'
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
@@ -10,10 +10,7 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         <div className="app__wrapper app__flex">
             <Component/>
 
-            <div className="copyright">
-                <p className='p-text'>@2022 Dheeraj</p>
-                <p className='p-text'>All rights reserved</p>
-            </div>
+            
         </div>
         <NavigationDots active={idName}/>
     </div>

@@ -119,3 +119,41 @@ background-color: #f2f7fb;
     }
 
 }
+
+.footer-Credit{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    // border: 2px solid red;
+  
+    display: flex;
+    margin-top: 3rem;
+
+}
+.hearticon{
+    color: rgb(168, 11, 11);
+    
+    font-size: large;
+
+    @media screen and (min-width:2000px) {
+        font-size: xx-large;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+
+    
+}
+.allright-reserved{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercreditname{
+    text-decoration: none;
+    &:hover{
+        color: red;
+    }
+}
