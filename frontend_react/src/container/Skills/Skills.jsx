@@ -94,7 +94,7 @@ const Skills = () => {
             <div className="app__skills-exp-year">
               <img style={{ width: '100px', marginTop: '10px' }} src='https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png' alt="" />
 
-              <p className="bold-text">2022-2023</p>
+              <p className="bold-text">2022 </p>
             </div>
             <motion.div className="app__skills-exp-works">
 
