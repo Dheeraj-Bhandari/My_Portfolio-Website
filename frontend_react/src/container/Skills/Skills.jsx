@@ -47,7 +47,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience) => (
+          {/* {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
               key={experience.year}
@@ -67,7 +67,9 @@ const Skills = () => {
                       key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
+                      <img src={work.company} alt="" />
                       <p className="p-text">{work.company}</p>
+                      
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
@@ -81,7 +83,95 @@ const Skills = () => {
                 ))}
               </motion.div>
             </motion.div>
-          ))}
+          ))} */}
+          {/* Masai School Exp */}
+          <motion.div
+            className="app__skills-exp-item"
+
+          >
+            <div className="app__skills-exp-year">
+              <img style={{ width: '100px', marginTop: '10px' }} src='https://learn.masaischool.com/img/logo_big.png' alt="" />
+
+              <p className="bold-text">2022-2023</p>
+            </div>
+            <motion.div className="app__skills-exp-works">
+
+              <>
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="app__skills-exp-work"
+                  data-tip
+                // data-for={work.name}
+                // key={work.name}
+                >
+                  <h4 className="bold-text">MERN Development</h4>
+                  {/* <p className="p-text">Amazon</p> */}
+                  <ul style={{ marginTop: '10px' }}>
+                    <li>Delivery of Tasks in accordance with set quality standards.</li>
+                    <li>Ensure data privacy of Customers.</li>
+                    <li>Good listening skills through the process in order to achieve metrics</li>
+                  </ul>
+                </motion.div>
+                <ReactTooltip
+                  // id={work.name}
+                  effect="solid"
+                  arrowColor="#fff"
+                  className="skills-tooltip"
+                >
+                  {/* {work.desc} */}
+                  Responsible for listing commands of the user and logging them into a system in an accurate manner
+                </ReactTooltip>
+              </>
+
+            </motion.div>
+          </motion.div>
+
+          {/* Amazon Exp */}
+          <motion.div
+            className="app__skills-exp-item"
+
+          >
+            <div className="app__skills-exp-year">
+              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.pngfind.com/pngs/m/56-565024_amazon-logo-png-amazon-png-transparent-png.png' alt="" />
+
+              <p className="bold-text">2020-2022</p>
+            </div>
+            <motion.div className="app__skills-exp-works">
+
+              <>
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="app__skills-exp-work"
+                  data-tip
+                // data-for={work.name}
+                // key={work.name}
+                >
+                  <h4 className="bold-text">Data Assocaite</h4>
+                  {/* <p className="p-text">Amazon</p> */}
+                  <ul style={{ marginTop: '10px' }}>
+                    <li>Delivery of Tasks in accordance with set quality standards.</li>
+                    <li>Ensure data privacy of Customers.</li>
+                    <li>Good listening skills through the process in order to achieve metrics</li>
+                  </ul>
+                </motion.div>
+                <ReactTooltip
+                  // id={work.name}
+                  effect="solid"
+                  arrowColor="#fff"
+                  className="skills-tooltip"
+                >
+                  {/* {work.desc} */}
+                  Responsible for listing commands of the user and logging them into a system in an accurate manner
+                </ReactTooltip>
+              </>
+
+            </motion.div>
+          </motion.div>
+
+
+
         </div>
       </div>
     </>
@@ -89,8 +179,8 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  
+
   MotionWrap(Skills, 'app__skills'),
-    
-    'skills', 'app__whitebg'
-    );
+
+  'skills', 'app__whitebg'
+);

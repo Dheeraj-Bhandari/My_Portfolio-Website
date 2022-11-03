@@ -15,6 +15,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'techstack',
+        title: 'Tech Stack',
+        type: 'string',
+      },
+      {
         name: 'projectLink',
         title: 'Project Link',
         type: 'string',
