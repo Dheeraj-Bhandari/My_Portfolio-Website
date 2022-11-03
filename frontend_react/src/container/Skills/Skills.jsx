@@ -84,6 +84,54 @@ const Skills = () => {
               </motion.div>
             </motion.div>
           ))} */}
+
+          {/* Youtube Experaince */}
+          <a href="https://www.youtube.com/channel/UChXHt9pHik0rR0iZDOHNdsg" target={'_blank'} style={{textDecoration:'none', color:'black'}}>
+          <motion.div
+            className="app__skills-exp-item"
+            
+          >
+            <div className="app__skills-exp-year">
+              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png' alt="" />
+
+              <p className="bold-text">2022-2023</p>
+            </div>
+            <motion.div className="app__skills-exp-works">
+
+              <>
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="app__skills-exp-work"
+                  data-tip
+                data-for='CodeWithMe'
+                // key={work.name}
+                >
+                  <h4 className="bold-text">Code With Me</h4>
+                  {/* <p className="p-text">Amazon</p> */}
+                  <ul style={{ marginTop: '10px' }}>
+                    <li>Solving Data Structure Alogrithem Qustions</li>
+                    <li>Sharing Development Projects</li>
+                    <li>Sharing Software Development Related Content</li>
+                    <li>Solving LeetCode And Geeks For Geeks Daily Qustions</li>
+                    
+                  </ul>
+                </motion.div>
+                <ReactTooltip
+                  id='CodeWithMe'
+                  effect="solid"
+                  arrowColor="#fff"
+                  className="skills-tooltip"
+                >
+                  {/* {work.desc} */}
+                Uploading Regular Videos on Youtube Channel From Past 7 Months.  I like To Share What I learn. It Helps Others as well as me to to grasp strong Knowledge in Development and Coding
+                </ReactTooltip>
+              </>
+
+            </motion.div>
+          </motion.div>
+          </a>
+
           {/* Masai School Exp */}
           <motion.div
             className="app__skills-exp-item"
