@@ -102,25 +102,27 @@ const Skills = () => {
                   transition={{ duration: 0.5 }}
                   className="app__skills-exp-work"
                   data-tip
-                // data-for={work.name}
+                data-for='masai'
                 // key={work.name}
                 >
-                  <h4 className="bold-text">MERN Development</h4>
+                  <h4 className="bold-text">MERN Development(APPRENTICESHIP)</h4>
                   {/* <p className="p-text">Amazon</p> */}
                   <ul style={{ marginTop: '10px' }}>
-                    <li>Delivery of Tasks in accordance with set quality standards.</li>
-                    <li>Ensure data privacy of Customers.</li>
-                    <li>Good listening skills through the process in order to achieve metrics</li>
+                    <li>1200+ Hours Practical Coding</li>
+                    <li>80+ Mini Projects</li>
+                    <li>300+ Hours Data Structure & Alogrithms</li>
+                    <li>100+ Hours Soft Skill Development</li>
+                    <li>10+ Projects &  Hackathons</li>
                   </ul>
                 </motion.div>
                 <ReactTooltip
-                  // id={work.name}
+                  id='masai'
                   effect="solid"
                   arrowColor="#fff"
                   className="skills-tooltip"
                 >
                   {/* {work.desc} */}
-                  Responsible for listing commands of the user and logging them into a system in an accurate manner
+             Completed More then 35 Weeks Professional Web Development Training From India's Leading Platform. Created Mutliple Project Throughout this time with the calloboration of other team Members
                 </ReactTooltip>
               </>
 
@@ -133,7 +135,7 @@ const Skills = () => {
 
           >
             <div className="app__skills-exp-year">
-              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.pngfind.com/pngs/m/56-565024_amazon-logo-png-amazon-png-transparent-png.png' alt="" />
+              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.peninsulafamilyservice.org/wp-content/uploads/2019/08/amazon-logo-transparent.png' alt="" />
 
               <p className="bold-text">2020-2022</p>
             </div>
@@ -145,6 +147,7 @@ const Skills = () => {
                   transition={{ duration: 0.5 }}
                   className="app__skills-exp-work"
                   data-tip
+                  data-for='amazon'
                 // data-for={work.name}
                 // key={work.name}
                 >
@@ -158,6 +161,7 @@ const Skills = () => {
                 </motion.div>
                 <ReactTooltip
                   // id={work.name}
+                  id='amazon'
                   effect="solid"
                   arrowColor="#fff"
                   className="skills-tooltip"
