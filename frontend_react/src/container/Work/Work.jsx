@@ -3,6 +3,8 @@ import { AiFillEye, AiFillGithub ,AiFillYoutube } from 'react-icons/ai'
 import {  motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client';
+import imageUrlBuilder from '@sanity/image-url'
+import sanityClient from "@sanity/client"
 import './Work.scss'
 
 const Work = () => {
@@ -14,10 +16,15 @@ const Work = () => {
   useEffect(() => {
     const query = '*[_type == "works"]';
     client.fetch(query).then((data)=>{
+      console.log(data);
       setworks(data);
       setfilterWork(data);
     })
   }, [])
+
+
+
+
 
   const handleWorkFilter = (item) => {
     setactiveFilter(item);
@@ -53,10 +60,11 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__work-portfolio'
       >
-        {filterWork.map((work, index)=>(
+        {works.map((work, index)=>(
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              {console.log(urlFor(work.imgUrl))}
+              <img src={urlFor(work.imgUrl)}  alt="work img" />
             <motion.div
             whileHover={{opacity:[0,1]}}
             transition={{duration:0.25, ease:'easeInOut', staggerChildren:0.5}}

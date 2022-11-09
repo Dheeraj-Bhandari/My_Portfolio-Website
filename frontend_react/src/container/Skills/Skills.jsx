@@ -40,6 +40,7 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
+               
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
@@ -92,7 +93,7 @@ const Skills = () => {
             
           >
             <div className="app__skills-exp-year">
-              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png' alt="" />
+              <img style={{ width: '100px', marginTop: '10px' }} src='https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png' alt="Youtube img" />
 
               <p className="bold-text">2022 </p>
             </div>
