@@ -29,7 +29,7 @@ const Navbar = () => {
 
           <li className="app__flex p-text" >
             <div />
-              <a href='https://drive.google.com/file/d/1Vfoq39jAuS1DwVfYQBXgrZejkDhAGV85/view?usp=sharing' target={'_blank'} rel="noreferrer">Resume</a>
+              <a href='https://drive.google.com/file/d/1JrIgLdg0CFsATOQqy25UvI9AmbVcopIm/view?usp=sharing' target={'_blank'} rel="noreferrer">Resume</a>
           </li>
         </ul>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
                 ))}
 
                 <li>
-                <a onClick={() => setToggle(false)} href='https://drive.google.com/file/d/1Vfoq39jAuS1DwVfYQBXgrZejkDhAGV85/view?usp=sharing' target={'_blank'} rel="noreferrer">Resume</a>
+                <a onClick={() => setToggle(false)} href='https://drive.google.com/file/d/1JrIgLdg0CFsATOQqy25UvI9AmbVcopIm/view?usp=sharing' target={'_blank'} rel="noreferrer">Resume</a>
                 </li>
               </ul>
               <ul className='navbarSocial'>
@@ -76,7 +76,7 @@ const Navbar = () => {
       </nav>
       <div className="mycopyright">
         <p className="p-text"></p>
-        <a href="https://drive.google.com/file/d/1Vfoq39jAuS1DwVfYQBXgrZejkDhAGV85/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/1JrIgLdg0CFsATOQqy25UvI9AmbVcopIm/view?usp=sharing"
           target={'_blank'}
           rel="noreferrer"
         >
