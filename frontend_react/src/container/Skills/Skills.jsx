@@ -111,9 +111,9 @@ const Skills = () => {
                   <h4 className="bold-text">Code With Me</h4>
                   {/* <p className="p-text">Amazon</p> */}
                   <ul style={{ marginTop: '10px' }}>
-                    <li>Solving Data Structure Alogrithem Qustions</li>
-                    <li>Sharing Development Projects</li>
-                    <li>Sharing Software Development Related Content</li>
+                    <li>Sharing Knowledge About Javascript</li>
+                    <li>Making Video of Development Projects</li>
+                    <li>Software Development Related Content</li>
                     <li>Solving LeetCode And Geeks For Geeks Daily Qustions</li>
                     
                   </ul>
@@ -139,7 +139,7 @@ const Skills = () => {
 
           >
             <div className="app__skills-exp-year">
-              <img style={{ width: '100px', marginTop: '10px' }} src='https://learn.masaischool.com/img/logo_big.png' alt="" />
+              <img style={{ width: '100px', marginTop: '10px' }} src='http://levelupcollege.com/wp-content/uploads/2022/01/Masai_Logo.jpeg' alt="" />
 
               <p className="bold-text">2022-2023</p>
             </div>

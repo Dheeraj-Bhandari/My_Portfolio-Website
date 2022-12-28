@@ -44,6 +44,7 @@ const Work = () => {
   return (
     <>
       <h2 className='head-text'>My Creative<span> Projects</span> Section</h2>
+      <h3 ><span style={{color:"blue"}}> Hover</span> On Project to See Link</h3>
       <div className="app__work-filter">
         {['FrontEnd', 'BackEnd', 'FullStack', 'React JS', 'All'].map((item, index) => (
           <div
