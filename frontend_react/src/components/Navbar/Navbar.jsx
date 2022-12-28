@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { BsGithub, BsMedium, BsYoutube, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsMedium, BsYoutube, BsLinkedin, BsCodeSlash } from "react-icons/bs";
 import { images } from '../../constants';
 import './Navbar.scss';
 
@@ -64,6 +64,7 @@ const Navbar = () => {
               </ul>
               <ul className='navbarSocial'>
                 <li><a href="https://github.com/Dheeraj-Bhandari" target={'_blank'} rel="noreferrer"> <BsGithub /></a>
+                  <a href="https://leetcode.com/Dheeraj-bhandari/" target={'_blank'} rel="noreferrer"><BsCodeSlash /></a>
                   <a href="https://www.youtube.com/channel/UChXHt9pHik0rR0iZDOHNdsg" target={'_blank'} rel="noreferrer"><BsYoutube /></a>
                   <a href="https://www.linkedin.com/in/digitaldk/" target={'_blank'} rel="noreferrer"><BsLinkedin /></a>
                   <a href="https://digitaldk-in.medium.com/" target={'_blank'} rel="noreferrer"><BsMedium /></a>
